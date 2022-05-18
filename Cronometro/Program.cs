@@ -13,7 +13,7 @@
             Console.Clear();
             Console.WriteLine("S - Segundos -> 1s");
             Console.WriteLine("M - Minutos -> 1m");
-            Console.WriteLine("0 - Parar Cronometro");
+            Console.WriteLine("0s - Parar Cronometro");
             Console.WriteLine("Quanto tempo deseja cronometrar?");
 
             string opcaoDigitado = Console.ReadLine().ToLower();
@@ -25,7 +25,7 @@
             if (tipo == 'm')
                 multiplicador = 60;
 
-            if (tempoDigitado == '0')
+            if (tempoDigitado == 0)
                 System.Environment.Exit(0);
 
             Carregando(tempoDigitado * multiplicador);
