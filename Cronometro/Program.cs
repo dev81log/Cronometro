@@ -11,10 +11,13 @@
         static void Menu()
         {
             Console.Clear();
-            Console.WriteLine("S - Segundos");
-            Console.WriteLine("M - Minutos");
+            Console.WriteLine("S - Segundos -> 1s");
+            Console.WriteLine("M - Minutos -> 1m");
             Console.WriteLine("0 - Parar Cronometro");
             Console.WriteLine("Quanto tempo deseja cronometrar?");
+
+            string opcaoDigitada = Console.ReadLine().ToLower();
+            Console.WriteLine(opcaoDigitada);
 
         }
 
