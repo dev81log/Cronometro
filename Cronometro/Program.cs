@@ -25,7 +25,7 @@
             if (tipo == 'm')
                 multiplicador = 60;
 
-            if (tipo == '0')
+            if (tempoDigitado == '0')
                 System.Environment.Exit(0);
 
             Carregando(tempoDigitado * multiplicador);
